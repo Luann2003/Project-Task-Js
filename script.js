@@ -100,7 +100,7 @@ const fillFields = (project) => {
     document.getElementById('situacao').value = project.situacao;
     document.getElementById('estado').value = project.estado;
     document.getElementById('observacao').value = project.observacao;
-    document.getElementById('salvar').dataset.index = project.index;
+    document.getElementById('responsavel').dataset.index = project.index;
 };
 
 const editProject = (index) => {
