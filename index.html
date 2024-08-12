@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de projetos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <header>
+        <h1>Projetos</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-2">
+                <h2>Projeto X</h2>
+                <button id="newProjeto">Adicionar novo Projeto</button>
+            </div>
+            <table id="tbProject">
+                <thead>
+                    <tr>
+                        <th>Responsável do projeto</th>
+                        <th>Situação</th>
+                        <th>Estado</th>
+                        <th>Observação</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Novo Projeto</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </div>
+                <form id="form" class="modal-form">
+                    <input type="text" id="responsavel" data-index="new" class="modal-field" placeholder="Nome do Responsável" required>
+                    <select name="Situação" id="situacao">
+                        <option value="Prioridade">Prioridade</option>
+                        <option value="Crítico">Crítico</option>
+                        <option value="Exemplo">Exemplo</option>
+                        <option value="Exemplo2">Exemplo 2</option>
+                    </select>
+                    <select name="estado" id="estado">
+                        <option value="Pausado">Pausado</option>
+                        <option value="Concluido">Concluido</option>
+                        <option value="Andamento">Andamento</option>
+                        <option value="Aguardando">Aguardando</option>
+                    </select>
+                    <input type="text" id="observacao" class="modal-field" placeholder="Observação">
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="fechar" class="button red">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
